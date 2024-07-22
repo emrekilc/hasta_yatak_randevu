@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apsignup" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hasta_yatak_randevu.SignupController">
+   <children>
+      <Text fx:id="text1" fill="#1a31b5" layoutX="217.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Oluşturma" wrappingWidth="407.13671875">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="631.0" fitWidth="807.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="isim" layoutX="305.0" layoutY="142.0" prefHeight="31.0" prefWidth="179.0" />
+      <TextField fx:id="soyisim" layoutX="305.0" layoutY="199.0" prefHeight="31.0" prefWidth="179.0" />
+      <TextField fx:id="yaş" layoutX="305.0" layoutY="252.0" prefHeight="31.0" prefWidth="179.0" />
+      <TextField fx:id="tckimlik" layoutX="305.0" layoutY="306.0" prefHeight="31.0" prefWidth="179.0" />
+      <TextField fx:id="username" layoutX="305.0" layoutY="359.0" prefHeight="31.0" prefWidth="179.0" />
+      <TextField fx:id="password" layoutX="305.0" layoutY="407.0" prefHeight="31.0" prefWidth="179.0" />
+      <Button fx:id="kayıtol" layoutX="263.0" layoutY="479.0" mnemonicParsing="false" onAction="#kayitOlButtonAction" prefHeight="57.0" prefWidth="101.0" text="Kayıt Ol" />
+      <Label layoutX="228.0" layoutY="149.0" text="İsim:" />
+      <Label layoutX="219.0" layoutY="206.0" text="Soyisim:" />
+      <Label layoutX="229.0" layoutY="259.0" prefHeight="17.0" prefWidth="25.0" text="Yaş:" />
+      <Label layoutX="198.0" layoutY="313.0" prefHeight="17.0" prefWidth="101.0" text="Kimlik Numarası:" />
+      <Label layoutX="202.0" layoutY="366.0" prefHeight="17.0" prefWidth="77.0" text="Kullanıcı adı:" />
+      <Label layoutX="227.0" layoutY="414.0" text="Şifre:" />
+      <Text fx:id="sonuctext" fill="#165b24" layoutX="225.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="338.13671875">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Button fx:id="geridon" layoutX="413.0" layoutY="479.0" mnemonicParsing="false" onAction="#geriDonButtonAction" prefHeight="57.0" prefWidth="101.0" text="Geri Dön" />
+   </children>
+</AnchorPane>

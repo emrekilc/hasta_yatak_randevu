@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" prefHeight="617.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hasta_yatak_randevu.RandevuController">
+   <left>
+      <AnchorPane fx:id="apleft" prefHeight="227.0" prefWidth="182.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane fx:id="aptop" prefHeight="151.0" prefWidth="742.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="randevutext" layoutX="312.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Randevu Sistemi">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="apcenter" prefHeight="497.0" prefWidth="620.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="apbottom" layoutX="-159.0" layoutY="240.0" prefHeight="144.0" prefWidth="742.0">
+               <children>
+                  <Button fx:id="randevusil" alignment="CENTER" layoutX="215.0" layoutY="26.0" mnemonicParsing="false" onAction="#releaseBed" prefHeight="46.0" prefWidth="143.0" text="Randevu Sil" />
+                  <Button fx:id="kacis" alignment="CENTER" layoutX="549.0" layoutY="26.0" mnemonicParsing="false" onAction="#onkacisClicked" prefHeight="46.0" prefWidth="143.0" text="Geri Dön" />
+                  <Text fx:id="resultText" fill="#010aff" layoutX="250.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="452.13671875">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button fx:id="bosyatak" layoutX="61.0" layoutY="31.0" mnemonicParsing="false" onAction="#showEmptyBeds" prefHeight="109.0" prefWidth="119.0" text="Boş Yataklar" />
+            <Button fx:id="randevual" alignment="CENTER" layoutX="391.0" layoutY="29.0" mnemonicParsing="false" onAction="#reserveBed" prefHeight="112.0" prefWidth="123.0" text="Randevu Al" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane fx:id="apright" prefHeight="214.0" prefWidth="173.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
